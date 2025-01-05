@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AlphaEd - Personalized AI-Driven Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">AlphaEd</a></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="product.html">How It Works</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <button onclick="location.href='contact.html?subject=demo'">Request a Demo</button>
+                <button onclick="location.href='services.html'">Learn More</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Revolutionizing Personalized Learning with AI-Driven Education</h1>
+            <p>Empowering students, easing teacher workloads, and transforming educational outcomes.</p>
+            <div class="cta-buttons">
+                <button onclick="location.href='contact.html?subject=demo'">Request a Demo</button>
+                <button onclick="location.href='services.html'">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <h2>Key Features</h2>
+        <div class="carousel features-carousel">
+            <div class="carousel-item">
+                <h3>AI Tutoring</h3>
+                <p>Our AI tutor adapts lessons to each student’s strengths, learning style, and interests, offering a personalized, engaging experience.</p>
+                <div class="icon-placeholder">🎓</div>
+            </div>
+            <div class="carousel-item">
+                <h3>Automated Assessments</h3>
+                <p>AI-powered assessment creation and instant grading reduce teacher workloads and offer real-time feedback to students.</p>
+                <div class="icon-placeholder">📊</div>
+            </div>
+            <div class="carousel-item">
+                <h3>Predictive Insights</h3>
+                <p>Data-driven analytics identify potential challenges early and provide intervention recommendations.</p>
+                <div class="icon-placeholder">📈</div>
+            </div>
+            <div class="carousel-item">
+                <h3>Offline Solutions</h3>
+                <p>Access to preloaded educational resources and digital content optimization ensures learning even in limited connectivity areas.</p>
+                <div class="icon-placeholder">📚</div>
+            </div>
+            <div class="carousel-item">
+                <h3>Competency Assessment</h3>
+                <p>Real-time assessments dynamically adjust to evaluate student strengths and weaknesses, providing accurate insights.</p>
+                <div class="icon-placeholder">📝</div>
+            </div>
+        </div>
+        <button class="carousel-control prev" id="features-prev">❮</button>
+        <button class="carousel-control next" id="features-next">❯</button>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <h2>What Our Users Say</h2>
+        <div class="carousel testimonials-carousel">
+            <div class="carousel-item">
+                <p>"AlphaEd transformed how I engage with my students. It made every day more productive!"</p>
+                <cite>- A Dedicated Teacher</cite>
+            </div>
+            <div class="carousel-item">
+                <p>"With AlphaEd's AI tutor, I finally understood complex subjects in ways that made sense to me!"</p>
+                <cite>- A High School Student</cite>
+            </div>
+            <div class="carousel-item">
+                <p>"As a principal, I saw remarkable improvements in student engagement and teacher efficiency."</p>
+                <cite>- A School Leader</cite>
+            </div>
+        </div>
+        <button class="carousel-control prev" id="testimonials-prev">❮</button>
+        <button class="carousel-control next" id="testimonials-next">❯</button>
+    </section>
+
+    <footer class="footer">
+        <div class="newsletter">
+            <h3>Sign Up for Our Newsletter</h3>
+            <form id="newsletter-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <select id="role" required>
+                    <option value="" disabled selected>Choose your role</option>
+                    <option value="student">Student</option>
+                    <option value="educator">Educator</option>
+                    <option value="school-leadership">School Leadership</option>
+                    <option value="parent">Parent</option>
+                    <option value="investor">Investor</option>
+                </select>
+                <input type="hidden" id="location" name="location">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p>Contact Us: contact@alphaed.com | Phone: +1-234-567-8901</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>

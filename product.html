@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AlphaEd - How It Works</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">AlphaEd</a></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="product.html">How It Works</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <button onclick="location.href='contact.html?subject=demo'">Request a Demo</button>
+                <button onclick="location.href='#learn-more'">Learn More</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="product-hero">
+        <div class="hero-content">
+            <h1>Experience the Future of Learning</h1>
+            <p class="hero-subtitle">See how our AI-powered platform creates personalized learning journeys</p>
+            <div class="hero-cta">
+                <button class="primary-btn" onclick="openVideoModal('demo')">Watch Demo Video</button>
+                <button class="secondary-btn" onclick="openVideoModal('live')">View Live Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Overview -->
+    <section class="platform-overview">
+        <h2>One Platform, Three Powerful Interfaces</h2>
+        <div class="dashboard-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="student">Student Dashboard</button>
+                <button class="tab-btn" data-tab="teacher">Teacher Dashboard</button>
+                <button class="tab-btn" data-tab="admin">Admin Dashboard</button>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-panel active" id="student">
+                    <div class="dashboard-preview">
+                        <img src="images/student-dashboard.png" alt="Student Dashboard Preview">
+                        <div class="feature-list">
+                            <h3>Student Experience</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Personalized learning paths</li>
+                                <li><i class="fas fa-check"></i> Interactive AI tutoring</li>
+                                <li><i class="fas fa-check"></i> Real-time progress tracking</li>
+                                <li><i class="fas fa-check"></i> Gamified learning experiences</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-panel" id="teacher">
+                    <div class="dashboard-preview">
+                        <img src="images/teacher-dashboard.png" alt="Teacher Dashboard Preview">
+                        <div class="feature-list">
+                            <h3>Teacher Tools</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Class performance analytics</li>
+                                <li><i class="fas fa-check"></i> Automated grading system</li>
+                                <li><i class="fas fa-check"></i> Lesson planning assistant</li>
+                                <li><i class="fas fa-check"></i> Student intervention alerts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-panel" id="admin">
+                    <div class="dashboard-preview">
+                        <img src="images/admin-dashboard.png" alt="Admin Dashboard Preview">
+                        <div class="feature-list">
+                            <h3>Administrative Control</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Institution-wide analytics</li>
+                                <li><i class="fas fa-check"></i> Resource allocation tools</li>
+                                <li><i class="fas fa-check"></i> Performance benchmarking</li>
+                                <li><i class="fas fa-check"></i> Compliance monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="key-features">
+        <h2>Platform Features</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-brain"></i>
+                <h3>AI-Powered Learning</h3>
+                <p>Advanced algorithms adapt to each student's learning style and pace</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Real-time Analytics</h3>
+                <p>Comprehensive insights into student performance and progress</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <h3>Collaborative Tools</h3>
+                <p>Enhanced communication between students, teachers, and parents</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Platform</h3>
+                <p>GDPR-compliant with advanced data protection measures</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Process -->
+    <section class="integration-steps">
+        <h2>Getting Started is Easy</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Schedule Demo</h3>
+                <p>See the platform in action with a personalized demonstration</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Custom Setup</h3>
+                <p>We configure the platform to match your institution's needs</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Training</h3>
+                <p>Comprehensive training for all user levels</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Launch</h3>
+                <p>Go live with full support from our team</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long does implementation take?</h3>
+                    <button class="toggle-icon">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Typical implementation takes 2-4 weeks, depending on your institution's size and requirements. This includes:</p>
+                    <ul>
+                        <li>Initial setup and configuration: 3-5 days</li>
+                        <li>Data migration and integration: 1-2 weeks</li>
+                        <li>User training and onboarding: 1 week</li>
+                        <li>Testing and final adjustments: 3-5 days</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is training included?</h3>
+                    <button class="toggle-icon">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, comprehensive training is included for all user levels:</p>
+                    <ul>
+                        <li>Administrator training sessions</li>
+                        <li>Teacher workshops and resources</li>
+                        <li>Student orientation materials</li>
+                        <li>Access to our online learning portal</li>
+                        <li>Ongoing support and refresher courses</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can it integrate with existing systems?</h3>
+                    <button class="toggle-icon">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, our platform integrates seamlessly with most major systems including:</p>
+                    <ul>
+                        <li>Learning Management Systems (Canvas, Blackboard, Moodle)</li>
+                        <li>Student Information Systems</li>
+                        <li>Authentication systems (SSO, LDAP)</li>
+                        <li>Third-party educational tools and APIs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional FAQs (initially hidden) -->
+            <div class="faq-item hidden-faq">
+                <div class="faq-question">
+                    <h3>What kind of support do you offer?</h3>
+                    <button class="toggle-icon">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>We provide comprehensive support through multiple channels:</p>
+                    <ul>
+                        <li>24/7 technical support via chat and email</li>
+                        <li>Dedicated customer success manager</li>
+                        <li>Regular check-ins and progress reviews</li>
+                        <li>Online knowledge base and documentation</li>
+                        <li>Priority phone support during business hours</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item hidden-faq">
+                <div class="faq-question">
+                    <h3>How do you ensure data privacy?</h3>
+                    <button class="toggle-icon">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>We take data privacy seriously and maintain strict security measures:</p>
+                    <ul>
+                        <li>GDPR and FERPA compliance</li>
+                        <li>End-to-end encryption</li>
+                        <li>Regular security audits</li>
+                        <li>Secure data centers</li>
+                        <li>Data backup and recovery protocols</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item hidden-faq">
+                <div class="faq-question">
+                    <h3>What are the system requirements?</h3>
+                    <button class="toggle-icon">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Our platform is web-based and works on most modern devices:</p>
+                    <ul>
+                        <li>Modern web browser (Chrome, Firefox, Safari, Edge)</li>
+                        <li>Stable internet connection (minimum 2 Mbps)</li>
+                        <li>Any device with 4GB RAM or more</li>
+                        <li>Supports both desktop and mobile devices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="faq-expand">
+            <button id="expandFAQ" class="expand-button">
+                View More FAQs
+                <span class="arrow-icon">▼</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="product-cta">
+        <h2>Ready to Transform Your Institution?</h2>
+        <p>Join over 1000+ institutions already using AlphaEd</p>
+        <div class="cta-buttons">
+            <button onclick="location.href='contact.html?subject=demo'">Request a Demo</button>
+            <button class="secondary-btn">Contact Sales</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <p>Contact Us: contact@alphaed.com | Phone: +1-234-567-8901</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
+        </div>
+    </footer>
+
+    <!-- Add this after the hero section -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="videoContainer">
+                <!-- Video iframe will be inserted here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
