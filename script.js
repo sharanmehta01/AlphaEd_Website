@@ -493,3 +493,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Add this to your existing script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Debug log to check if script is running
+    console.log('Script loaded');
+
+    const navToggle = document.getElementById('navToggle');
+    const navWrapper = document.getElementById('navWrapper');
+    
+    // Debug log to check if elements are found
+    console.log('Nav Toggle:', navToggle);
+    console.log('Nav Wrapper:', navWrapper);
+
+    if (navToggle && navWrapper) {
+        navToggle.addEventListener('click', function() {
+            console.log('Toggle clicked'); // Debug log
+            navToggle.classList.toggle('active');
+            navWrapper.classList.toggle('active');
+            
+            // Log the current state
+            console.log('Nav Toggle classes:', navToggle.classList);
+            console.log('Nav Wrapper classes:', navWrapper.classList);
+        });
+    }
+});
