@@ -55,21 +55,21 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info-content">
                                 <h3>Location</h3>
-                                <p>123 Innovation Drive<br>San Francisco, CA 94105</p>
+                                <p>1208 South 4th Street<br>Champaign, IL 61820</p>
                             </div>
                         </a>
-                        <a href="tel:+15551234567" class="info-item">
+                        <a href="tel:+16464929656" class="info-item">
                             <i class="fas fa-phone"></i>
                             <div class="info-content">
                                 <h3>Phone</h3>
-                                <p>+1 (555) 123-4567<br>Mon-Fri, 9:00-17:00 PST</p>
+                                <p>+1 (646) 492-9656<br>Mon-Fri, 9:00-17:00 CST</p>
                             </div>
                         </a>
-                        <a href="mailto:info@alphaed.com" class="info-item">
+                        <a href="mailto:alphaed.ai@gmail.com" class="info-item">
                             <i class="fas fa-envelope"></i>
                             <div class="info-content">
                                 <h3>Email</h3>
-                                <p>info@alphaed.com<br>support@alphaed.com</p>
+                                <p>alphaed.ai@gmail.com</p>
                             </div>
                         </a>
                     </div>
@@ -84,35 +84,36 @@
                 <!-- Contact Form -->
                 <div class="contact-form-container">
                     <h2>Send Us a Message</h2>
-                    <form id="contact-form" class="contact-form">
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="entry.308407871" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="entry.972445939" required>
                         </div>
 
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <select id="subject" name="subject" required>
+                            <select id="subject" name="entry.736683831" required>
                                 <option value="">Select a subject</option>
-                                <option value="demo">Request Demo</option>
-                                <option value="support">Technical Support</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="other">Other</option>
+                                <option value="Request Demo">Request Demo</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="entry.901076482" rows="5" required></textarea>
                         </div>
                         
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <button type="submit" class="submit-btn" id="contact-submit">Send Message</button>
                     </form>
+                    <div id="contact-message" class="submission-message"></div>
                 </div>
             </div>
         </div>
@@ -156,7 +157,7 @@
 
     <footer class="footer">
         <div class="contact-info">
-            <p>Contact Us: contact@alphaed.com | Phone: +1-234-567-8901</p>
+            <p>Contact Us: alphaed.ai@gmail.com | Phone: +1-646-492-9656</p>
         </div>
         <div class="social-media">
             <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>

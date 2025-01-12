@@ -518,3 +518,97 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+function handleNewsletterSubmit(event) {
+    event.preventDefault();
+    
+    const form = document.getElementById('newsletter-form');
+    const messageDiv = document.getElementById('submission-message');
+    const submitButton = document.getElementById('newsletter-submit');
+    
+    // Disable the submit button to prevent double submission
+    submitButton.disabled = true;
+    
+    // Get form data
+    const formData = new FormData(form);
+    
+    // Replace this URL with your Google Form submission URL
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdzehZk44lTra7hFmD5gQ_TaaKhiOTLbhZBIDrRgEY2v5IXhg/formResponse';
+    
+    // Submit the form data
+    fetch(googleFormUrl, {
+        method: 'POST',
+        mode: 'no-cors', // Required for Google Forms
+        body: formData
+    })
+    .then(() => {
+        // Show success message
+        messageDiv.textContent = 'Thank you for subscribing!';
+        messageDiv.className = 'submission-message success';
+        
+        // Reset form
+        form.reset();
+    })
+    .catch(error => {
+        // Show error message
+        messageDiv.textContent = 'Something went wrong. Please try again.';
+        messageDiv.className = 'submission-message error';
+    })
+    .finally(() => {
+        // Re-enable the submit button
+        submitButton.disabled = false;
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            messageDiv.textContent = '';
+            messageDiv.className = 'submission-message';
+        }, 5000);
+    });
+}
+
+function handleContactSubmit(event) {
+    event.preventDefault();
+    
+    const form = document.getElementById('contact-form');
+    const messageDiv = document.getElementById('contact-message');
+    const submitButton = document.getElementById('contact-submit');
+    
+    // Disable the submit button to prevent double submission
+    submitButton.disabled = true;
+    
+    // Get form data
+    const formData = new FormData(form);
+    
+    // Google Form submission URL
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSd63ZUqFzhLlg9qZLhrYmZw4cUxanpXkX_ID2AVw_VP-1CAVQ/formResponse';
+    
+    // Submit the form data
+    fetch(googleFormUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+    })
+    .then(() => {
+        // Show success message
+        messageDiv.textContent = 'Thank you for your message! We will get back to you soon.';
+        messageDiv.className = 'submission-message success';
+        
+        // Reset form
+        form.reset();
+    })
+    .catch(error => {
+        // Show error message
+        messageDiv.textContent = 'Something went wrong. Please try again.';
+        messageDiv.className = 'submission-message error';
+    })
+    .finally(() => {
+        // Re-enable the submit button
+        submitButton.disabled = false;
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            messageDiv.textContent = '';
+            messageDiv.className = 'submission-message';
+        }, 5000);
+    });
+}

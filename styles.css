@@ -2014,3 +2014,26 @@ body {
         font-size: 1.1rem;
     }
 }
+
+.submission-message {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    display: none;
+}
+
+.submission-message.success {
+    display: block;
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+}
+
+.submission-message.error {
+    display: block;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
